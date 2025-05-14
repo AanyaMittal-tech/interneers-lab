@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+// import AppWithApi from "./AppWithApi"; // Phase 2 API version
+import AppWithRouter from "./AppWithRouter"; // Phase 3 - Full app
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
@@ -11,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AppWithRouter />
     </BrowserRouter>
   </React.StrictMode>,
 );
